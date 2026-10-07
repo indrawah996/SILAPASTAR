@@ -1,0 +1,8 @@
+{
+  "name": "SILAPASTAR - SISTEM INFORMASI LAPAS TARAKAN",
+  "description": "Satu Data Pemasyarakatan Lapas Kelas IIA Tarakan - Sistem monitoring WBP, Jadwal Piket, dan Kegiatan Lapas berbasis Role.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

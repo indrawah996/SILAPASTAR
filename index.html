@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SILAPASTAR - SISTEM INFORMASI LAPAS TARAKAN</title>
+    <meta name="description" content="Satu Data Pemasyarakatan Lapas Kelas IIA Tarakan - Sistem monitoring WBP, Jadwal Piket, dan Kegiatan Lapas berbasis Role." />
+    <meta property="og:title" content="SILAPASTAR - SISTEM INFORMASI LAPAS TARAKAN" />
+    <meta property="og:description" content="Satu Data Pemasyarakatan Lapas Kelas IIA Tarakan" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0F3057" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SILAPASTAR" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(
+            (reg) => console.log('ServiceWorker registered with scope: ', reg.scope),
+            (err) => console.warn('ServiceWorker registration failed: ', err)
+          );
+        });
+      }
+    </script>
+  </head>
+  <body class="bg-[#F5F7FB] text-slate-800 antialiased font-['Plus_Jakarta_Sans',sans-serif]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
